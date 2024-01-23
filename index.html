@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nunes Sports - CRUD de Produtos</title>
+</head>
+<body>
+    <h1>Nunes Sports - CRUD de Produtos</h1>
+
+    <!-- Tabela para exibição dos produtos -->
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Ações</th>
+        </tr>
+        <!-- Aqui serão exibidos os produtos dinamicamente -->
+    </table>
+
+    <!-- Formulário para adição e edição de produtos -->
+    <form action="processa_produto.php" method="post">
+        <label for="nome">Nome do Produto:</label>
+        <input type="text" name="nome" required>
+        <br>
+        <label for="codigo">Código do Produto:</label>
+        <input type="text" name="codigo" required>
+        <br>
+        <label for="descricao">Descrição do Produto:</label>
+        <textarea name="descricao" required></textarea>
+        <br>
+        <label for="preco">Preço do Produto:</label>
+        <input type="text" name="preco" required>
+        <br>
+        <input type="submit" value="Salvar">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
